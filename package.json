@@ -15,7 +15,6 @@
   "homepage": "https://cesiumjs.org",
   "license": "Apache-2.0",
   "devDependencies": {
-    "cesium": "^1.39.0",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.7",
     "html-webpack-plugin": "^2.30.1",
@@ -31,5 +30,10 @@
     "start": "node_modules/.bin/webpack-dev-server --config webpack.config.js",
     "release": "node_modules/.bin/webpack --config webpack.release.config.js",
     "serve-release": "node_modules/.bin/webpack-dev-server --config webpack.release.config.js --content-base /dist"
+  },
+  "dependencies": {
+    "cesium": "^1.39.0",
+    "fetch-intercept": "^2.3.1",
+    "whatwg-fetch": "^3.0.0"
   }
 }
